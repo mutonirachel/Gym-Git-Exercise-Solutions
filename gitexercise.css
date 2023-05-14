@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    background-color: rgb(235, 220, 193);
+ }
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin:45px auto;
+    width: 90%;
+    font-family: sans-serif;
+}
+.card{
+    background-color: rgb(56, 108, 153);
+    padding: 12px;
+}
+.daniel{
+    grid-column: 1 / span 2;
+    background-color: rgb(125, 21, 125);
+    color: white;
+}
+.kira{
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    background-color: rgb(3, 3, 33);
+    color: white;
+}
+.patrick{
+    /* grid-column: 1; */
+     /* grid-column: 2 / span 2; */
+     grid-column-start: 2;
+     grid-column-end: span 2;
+     background-color: rgb(51, 68, 3);
+     color: white;
+}
+.jeanette{
+    background-color: rgb(28, 27, 27);
+    color: white;
+}
+.jonathan{
+    color: white;
+}
+.card__img{
+    border-radius: 80%;
+    width: 30px;
+    height: 30px;
+}
+.card__header{
+    display: flex;
+}
+.hp{
+    padding-left: 14px;
+    font-weight:900;
+    font-size: 14px;
+}
+.card__lead{
+    padding-top: 12px;
+    font-weight:900;
+}
+.card__quote{
+    padding-top: 12px;
+    
+}
