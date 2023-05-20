@@ -199,4 +199,188 @@ commit"
 [ft/bundle-2 425e87b] another commit
  1 file changed, 12 insertions(+)
  create mode 100644 service.html
+ PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git add .
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "changes on service file to be committed"
+[ft/service-design 6b01f88] changes on service file to be committed
+ 2 files changed, 215 insertions(+)
+ create mode 100644 service.html
+fatal: The current branch ft/service-design has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin ft/service-design
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git push --set-upstream origin ft/service-design
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.36 KiB | 604.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/service-design' on GitHub by visiting:
+remote:      https://github.com/mutonirachel/Gym-Git-Exercise-Solutions/pull/new/ft/service-design
+remote:
+To https://github.com/mutonirachel/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-design -> ft/service-design
+branch 'ft/service-design' set up to track 'origin/ft/service-design'.
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git checkout ft/service-design
+Already on 'ft/service-design'
+Your branch is up to date with 'origin/ft/service-design'.
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git mergre main
+git: 'mergre' is not a git command. See 'git --help'.
+
+The most similar command is
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git add service.html                                     
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "other changes on service file"
+[main 492907a] other changes on service file
+ 1 file changed, 13 insertions(+)
+ create mode 100644 service.html
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 510 bytes | 102.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mutonirachel/Gym-Git-Exercise-Solutions.git
+   a8a68b7..492907a  main -> main
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git checkout ft/service-design
+Switched to branch 'ft/service-design'
+Your branch is up to date with 'origin/ft/service-design'.
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git diff main..ft/service-design 
+diff --git a/README.md b/README.md
+index e69de29..120b45a 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,202 @@
++# GIT EXERCISES
++
++## BUNDLE1
++
++### EXERCISE1
++
++```bash
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git init
++Initialized empty Git repository in C:/Users/AAA/Desktop/Gym Git Exercise Solutions/.git/
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git branch -m master main
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git add .
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "first commit"
++[main (root-commit) a8a68b7] first commit
++ 3 files changed, 198 insertions(+)
++ create mode 100644 README.md
++ create mode 100644 gitexercises.html
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git remote add origin https://github.com/mutonirachel/Gy:...skipping...
+diff --git a/README.md b/README.md
+index e69de29..120b45a 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,202 @@
++# GIT EXERCISES
++
++## BUNDLE1
++
++### EXERCISE1
++
++```bash
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git init
++Initialized empty Git repository in C:/Users/AAA/Desktop/Gym Git Exercise Solutions/.git/
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git branch -m master main
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git add .
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "first commit"
++[main (root-commit) a8a68b7] first commit
++ 3 files changed, 198 insertions(+)
++ create mode 100644 README.md
++ create mode 100644 gitexercises.html
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git remote add origin https://github.com/mutonirachel/Gym-Git-Exercise-Solutions.git
+:...skipping...
+diff --git a/README.md b/README.md
+index e69de29..120b45a 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,202 @@
++# GIT EXERCISES
++
++## BUNDLE1
++
++### EXERCISE1
++
++```bash
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git init
++Initialized empty Git repository in C:/Users/AAA/Desktop/Gym Git Exercise Solutions/.git/
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git branch -m master main
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git add .
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "first commit"
++[main (root-commit) a8a68b7] first commit
++ 3 files changed, 198 insertions(+)
++ create mode 100644 README.md
++ create mode 100644 gitexercises.html
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git remote add origin https://github.com/mutonirachel/Gym-Git-Exercise-Solutions.git
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git push
++fatal: The current branch main has no upstream branch.
++To push the current branch and set the remote as upstream, use
++
++    git push --set-upstream origin main
++
+:...skipping...
+diff --git a/README.md b/README.md
+index e69de29..120b45a 100644     
+diff --git a/README.md b/README.md
+index e69de29..120b45a 100644
+diff --git a/README.md b/README.md
+index e69de29..120b45a 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,202 @@
++# GIT EXERCISES
++
++## BUNDLE1
++
++### EXERCISE1
++
++```bash
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git init
++Initialized empty Git repository in C:/Users/AAA/Desktop/Gym Git Exercise Solutions/.git/
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git branch -m master main
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git add .
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "first commit"
++[main (root-commit) a8a68b7] first commit
++ 3 files changed, 198 insertions(+)      
++ create mode 100644 README.md
++ create mode 100644 gitexercises.html
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git remote add origin https://github.com/mutonirachel/Gym-Git-Exercise-Solutions.git       
++PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git push
++fatal: The current branch main has no upstream branch.
++To push the current branch and set the remote as upstream, use
++
++    git push --set-upstream origin main
++
++To have this happen automatically for branches without a tracking
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git merge main
+Auto-merging service.html
+CONFLICT (add/add): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git merge main
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git status
+>> q'
+>> "^C
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git commit -m "last changes"
+[ft/service-design a9be228] last changes
+PS C:\Users\AAA\Desktop\Gym Git Exercise Solutions> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 288 bytes | 288.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mutonirachel/Gym-Git-Exercise-Solutions.git
+   6b01f88..a9be228  ft/service-design -> ft/service-design
  ```
